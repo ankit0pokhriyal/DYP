@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #define size 100
 int partition(int a[], int beg, int end);
 void quick_sort(int a[], int beg, int end);
@@ -27,7 +26,7 @@ int partition(int a[], int beg, int end)
     flag = 0;
     while(flag !=1)
     {
-        while (a[loc]<=a[right] && (loc != right))
+        while ((a[loc]<=a[right]) && (loc != right))
         {
             right--;
         }
