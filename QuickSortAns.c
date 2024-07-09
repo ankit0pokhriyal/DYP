@@ -45,7 +45,7 @@ int partition(int a[], int beg, int end)
         }
         if (flag !=1)
         {
-            while ((a[loc] >= right) && (loc!=left))
+            while ((a[loc] >= a[left]) && (loc!=left))
             {
                 left++;
             }
